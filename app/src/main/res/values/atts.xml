@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="collapsing">
+        <attr name="collapsing" format="boolean"></attr>
+        <attr name="content" format="boolean"></attr>
+    </declare-styleable>
+</resources>

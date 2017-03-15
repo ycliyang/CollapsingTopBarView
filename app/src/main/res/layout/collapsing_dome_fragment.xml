@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <com.ly.views.collapsing.views.CollapsingTopBarView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/toolbar1"
+            app:collapsing="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="工具条一"></TextView>
+
+        <TextView
+            android:id="@+id/toolbar2"
+            android:layout_below="@+id/toolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="工具条二"></TextView>
+
+        <android.support.v4.view.ViewPager
+            android:layout_below="@+id/toolbar2"
+            android:id="@+id/ViewPager"
+            app:content="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+    </com.ly.views.collapsing.views.CollapsingTopBarView>
+
+</LinearLayout>
