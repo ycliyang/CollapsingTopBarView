@@ -230,6 +230,8 @@ public class CollapsingTopBarView extends ViewGroup {
                     this.top = -this.height;
                 } else if (lp.isContent() && this.contentView == null) {
                     this.contentView = child;
+                    lp.height = child.getMeasuredHeight()- this.collapsingView.getHeight();
+                    child.setLayoutParams(lp);
                     initContentView();
                 }
 //            }
